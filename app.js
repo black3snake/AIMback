@@ -26,7 +26,7 @@ MongoDBConnection.getConnection((error, connection) => {
     const app = express();
 
     app.use(express.static(path.join(__dirname, 'public')));
-    app.use(express.static(path.join(__dirname, 'frontend/dist/frontend')));
+    app.use(express.static(path.join(__dirname, 'frontend/dist/angular-im')));
     app.use(express.json());
     app.use(cors({credentials: true, origin: true}));
 
